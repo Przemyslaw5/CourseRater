@@ -1,0 +1,136 @@
+import { Course, CourseType } from './course';
+import { Rating } from './rating';
+
+
+export const COURSES: Course[] = [
+    {
+      id: 1,
+      name: 'Object Oriented Programming',
+      ECTS: 4,
+      semester: 3,
+      formCourse: CourseType.Project,
+      maxStudents: 62,
+      availablePlaces: 62,
+      students: [],
+      ratings: [{rating: 4, studentID: "1"}, {rating: 2, studentID: "9"}, {rating: 5, studentID: "18"}],
+      image: 'https://miro.medium.com/max/4000/1*0MgWZ0Nkl1aFIQ7IBFa1Ag.jpeg',
+      description: "Yeah, I think it's a good environment for learning English. Someone I know recently combined Maple Syrup & buttered Popcorn thinking it would taste like caramel popcorn."
+    },
+    {
+        id: 2,
+        name: 'Algorithms and data structures',
+        ECTS: 5,
+        semester: 1,
+        formCourse: CourseType.Exercise,
+        maxStudents: 28,
+        availablePlaces: 28,
+        students: [],
+        ratings: [{rating: 5, studentID: "2"}, {rating: 4, studentID: "7"}, {rating: 3, studentID: "12"}, {rating: 5, studentID: "10"}],
+        image: 'https://ict.iitk.ac.in/wp-content/uploads/Data-Structure-through-C-2.jpg',
+        description: 'The old apple revels in its authority. Please wait outside of the house. She did her best to help him.'
+    },
+    {
+        id: 3,
+        name: 'Angular',
+        ECTS: 4,
+        semester: 2,
+        formCourse: CourseType.Laboratory,
+        maxStudents: 36,
+        availablePlaces: 36,
+        students: [],
+        ratings: [{rating: 4, studentID: "3"}, {rating: 2, studentID: "26"}, {rating: 3, studentID: "21"}, {rating: 1, studentID: "17"}, {rating: 5, studentID: "9"}],
+        image: 'https://geek.justjoin.it/wp-content/uploads/2018/08/angular.png',
+        description: 'Joe made the sugar cookies; Susan decorated them. I often see the time 11:11 or 12:34 on clocks.'
+    },
+    {
+        id: 4,
+        name: 'SQL',
+        ECTS: 2,
+        semester: 5,
+        formCourse: CourseType.Project,
+        maxStudents: 24,
+        availablePlaces: 24,
+        students: [],
+        ratings: [{rating: 2, studentID: "31"}, {rating: 4, studentID: "9"}, {rating: 4, studentID: "10"}],
+        image: 'https://www.itpedia.nl/wp-content/uploads/2017/11/database2.jpg',
+        description: "She borrowed the book from him many years ago and hasn't yet returned it. Mary plays the piano."
+    },
+    {
+        id: 5,
+        name: 'JavaScript',
+        ECTS: 3,
+        semester: 4,
+        formCourse: CourseType.Laboratory,
+        maxStudents: 51,
+        availablePlaces: 51,
+        students: [],
+        ratings: [{rating: 4, studentID: "37"}, {rating: 1, studentID: "2"}, {rating: 5, studentID: "5"}, {rating: 4, studentID: "13"}, {rating: 2, studentID: "42"}],
+        image: 'http://radicalhub.com/wp-content/uploads/2018/07/javascript.jpg',
+        description: 'She works two jobs to make ends meet; at least, that was her reason for not having time to join us.'
+    },
+    {
+        id: 6,
+        name: 'Operating Systems',
+        ECTS: 4,
+        semester: 7,
+        formCourse: CourseType.Exercise,
+        maxStudents: 47,
+        availablePlaces: 47,
+        students: [],
+        ratings: [{rating: 1, studentID: "25"}, {rating: 5, studentID: "4"}, {rating: 2, studentID: "30"}, {rating: 4, studentID: "41"}],
+        image: 'https://www.pcquest.com/wp-content/uploads/2016/02/Untitled-271.jpg',
+        description: 'We have a lot of rain in June. We have never been to Asia, nor have we visited Africa. She folded her handkerchief neatly.'
+    },
+    {
+        id: 7,
+        name: 'Geometric Algorithms',
+        ECTS: 6,
+        semester: 6,
+        formCourse: CourseType.Exercise,
+        maxStudents: 29,
+        availablePlaces: 29,
+        students: [],
+        ratings: [{rating: 2, studentID: "7"}, {rating: 5, studentID: "22"}, {rating: 2, studentID: "31"}],
+        image: 'https://home.aero.polimi.it/freecase/images/YF17mesh.png',
+        description: 'Malls are great places to shop; I can find everything I need under one roof. I currently have 4 windows open up… and I don’t know why.'
+    },
+    {
+        id: 8,
+        name: 'Unix',
+        ECTS: 3,
+        semester: 4,
+        formCourse: CourseType.Laboratory,
+        maxStudents: 34,
+        availablePlaces: 34,
+        students: [],
+        ratings: [{rating: 3, studentID: "14"}, {rating: 4, studentID: "5"}, {rating: 4, studentID: "26"}, {rating: 5, studentID: "23"}, {rating: 4, studentID: "63"}],
+        image: 'https://cloudera2017.files.wordpress.com/2019/08/unix-linux.png',
+        description: 'Wednesday is hump day, but has anyone asked the camel if he’s happy about it? I am never at home on Sundays.'
+    },
+    {
+        id: 9,
+        name: 'Python',
+        ECTS: 5,
+        semester: 3,
+        formCourse: CourseType.Laboratory,
+        maxStudents: 32,
+        availablePlaces: 32,
+        students: [],
+        ratings: [{rating: 5, studentID: "28"}, {rating: 5, studentID: "13"}, {rating: 5, studentID: "18"}, {rating: 4, studentID: "42"}],
+        image: 'http://pristinetechschool.com/wp-content/uploads/2019/04/img2-1.png',
+        description: "I'd rather be a bird than a fish. Don't step on the broken glass. He turned in the research paper on Friday; otherwise, he would have not passed the class."
+    },
+    {
+        id: 10,
+        name: 'Physics',
+        ECTS: 4,
+        semester: 1,
+        formCourse: CourseType.Exercise,
+        maxStudents: 40,
+        availablePlaces: 40,
+        students: [],
+        ratings: [{rating: 1, studentID: "20"}, {rating: 1, studentID: "29"}, {rating: 5, studentID: "24"}],
+        image: 'http://interlitq.org/blog/wp-content/uploads/2019/02/file-20171025-25516-g7rtyl-300x216.jpg',
+        description: 'The mysterious diary records the voice. Check back tomorrow; I will see if the book has arrived. Tom got a small piece of pie.'
+    },
+  ];

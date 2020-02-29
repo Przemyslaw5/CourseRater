@@ -1,0 +1,12 @@
+h1 span{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.image{
+    height:50em; background-size:cover; width:auto;
+    background-image:url('https://www.mercuryit.com.au/wp-content/uploads/2018/01/latest-it-background@2x.jpg');
+    background-position:50% 50%;
+    padding: 50px;
+    color: white;
+}

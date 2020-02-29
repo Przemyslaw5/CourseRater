@@ -1,0 +1,49 @@
+<div class="image">
+  <div class="loginBox">
+    <h3>Log in</h3>
+    <p style="color: green; text-align: center;">{{ registerInfo }}</p>
+    <form class="m-3" [formGroup]="modelForm" novalidate>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>E-mail:</label>
+              <input class="form-control" formControlName="email" type="text" placeholder="Enter your e-mail" [ngClass]="{
+                'is-valid': email.valid && email.dirty,
+                'is-invalid': email.invalid && email.dirty}">
+              <div class="invalid-feedback" *ngIf="email.invalid && email.dirty">
+                <p *ngIf="email.errors.required">Email is required!</p>
+                <p *ngIf="email.errors.pattern">Email is wrong!</p>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label>Password:</label>
+              <input class="form-control" formControlName="password" type="text" placeholder="Enter your password" [ngClass]="{
+                'is-valid': password.valid && password.dirty,
+                'is-invalid': password.invalid && password.dirty}">
+              <div class="invalid-feedback" *ngIf="password.invalid && password.dirty">
+                <p *ngIf="password.errors.required">Password is required!</p>
+                <p *ngIf="password.errors.minlength">Password has at least 6 characters!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="text-center mt-3 mb-5">
+        <a class="btn btn-secondary btn-lg disabled" role="button" *ngIf="modelForm.invalid" aria-disabled="true">Login</a>
+        <button type="button" class="btn btn-primary btn-lg" *ngIf="modelForm.valid" (click)="login()">Login</button>
+        <div *ngIf="badLogin">
+          <p class="warning">Login or password is incorrect!</p>
+        </div>
+      </div>
+
+      <div class="info-register">
+        You don't have account? <a routerLink="/sign-up" routerLinkActive="active">Register now!</a> 
+      </div>
+  
+    </form>
+  </div>  
+</div>

@@ -1,0 +1,13 @@
+.zebra-pattern:nth-child(odd) {
+    background-color: #cccccc;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 25px;
+}
+
+.zebra-pattern:nth-child(even) {
+    background-color: #9b9b9b;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 25px;
+}

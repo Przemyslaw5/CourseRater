@@ -1,0 +1,16 @@
+<div class="container">
+        <div class="row">
+                <div class="col-md-3 vr-all">
+                        <img class="course-icon" [src]="course.image"/>
+                </div>
+                <div class="col-md-7 leftspan vertical-align-bot">
+                        <h2 class="card-title"> {{ course.name }} </h2>
+                </div>
+                <div class="col-md-1 vertical-align-bot">
+                        <button type="button" class="btn btn-dark" *ngIf="isAdmin() === true" [routerLink]="['/courses/edit', course.id]">Edit</button>
+                </div>
+                <div class="col-md-1 text-center vertical-align-bot">
+                        <button type="button" class="btn btn-dark" [routerLink]="['/courses', course.id]">More</button>
+                </div>
+        </div>
+</div>

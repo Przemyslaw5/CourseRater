@@ -1,0 +1,9 @@
+img{
+    height: auto;
+    width: 200px;
+}
+
+.vertical-align-bot{
+    margin-top: auto;
+    margin-bottom: auto;
+}

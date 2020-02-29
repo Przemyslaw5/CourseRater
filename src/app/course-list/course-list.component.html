@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-4">
+            <h1 class="text-center">List of Courses</h1>
+        </div>
+    </div>
+    <div class="row">
+        <app-course class="col-md-12 zebra-pattern" *ngFor="let course of (courses | filter: filterObject)" [course] = "course"></app-course>
+    </div>
+</div>

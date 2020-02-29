@@ -1,0 +1,22 @@
+.navbar{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.add{
+    min-width: 500px;
+}
+
+.filter{
+    min-width: 400px;
+}
+
+.account{
+    min-width: 250px;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
